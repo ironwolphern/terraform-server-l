@@ -50,7 +50,7 @@ variable "Domain" {
   type = string
 }
 
-variable "list_Domanin" {
+variable "list_Domain" {
   type    = list
   default = []
 }
