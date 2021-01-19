@@ -35,7 +35,7 @@ resource "vsphere_virtual_machine" "vm_l" {
       }
 
       network_interface {
-        ipv4_address = var.ip
+        ipv4_address = cidrhost(var.network_cidr, var.ip+count.index)
         ipv4_netmask = var.Netmask
       }
 
