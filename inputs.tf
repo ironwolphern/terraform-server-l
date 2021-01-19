@@ -55,6 +55,10 @@ variable "list_Domain" {
   default = []
 }
 
+variable "network_cidr" {
+  type = string
+}
+
 variable "ip" {
   type = string
 }
